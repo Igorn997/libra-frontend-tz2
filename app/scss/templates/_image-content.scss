@@ -1,0 +1,19 @@
+.image-content {
+  .image-content-inner {
+    padding-top: 90px;
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: center;
+
+    .image-content-inner-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      // padding-left: 100px;
+      .image-content-inner-img {
+        width: 100%;
+      }
+    }
+  }
+}

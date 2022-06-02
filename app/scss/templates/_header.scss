@@ -1,0 +1,27 @@
+.site-header {
+  background-image: url("/app/images/hero.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-blend-mode: multiply;
+  .site-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    .site-header-inner-right {
+      .menu-toggle {
+        .menu-toggle-bar1 {
+          width: 45px;
+          height: 5px;
+          background-color: $black;
+          margin: 6px 0;
+        }
+        .menu-toggle-bar2 {
+          width: 25px;
+          height: 5px;
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
