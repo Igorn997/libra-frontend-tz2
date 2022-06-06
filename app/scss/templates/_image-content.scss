@@ -1,17 +1,18 @@
 .image-content {
   .image-content-inner {
-    padding-top: 90px;
+    padding-top: 40px;
     display: flex;
     flex: 0 0 100%;
+    max-width: 100%;
     align-items: center;
-    justify-content: center;
-
-    .image-content-inner-col {
+    gap: 100px;
+    .image-content-col {
       flex: 0 0 50%;
       max-width: 50%;
-
-      // padding-left: 100px;
-      .image-content-inner-img {
+      p {
+        padding-bottom: 50px;
+      }
+      .image-content-col-img {
         width: 100%;
       }
     }

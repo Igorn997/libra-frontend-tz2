@@ -1,9 +1,3 @@
-p {
-  color: $gray-light;
-  font-size: 17px;
-  line-height: 24px;
-}
-
 h1,
 h2,
 h3,
@@ -11,6 +5,16 @@ h4,
 p {
   padding: 0;
   margin: 0;
+}
+
+p {
+  color: $gray-light;
+  font-size: 17px;
+  line-height: 24px;
+  &.footer {
+    color: $white;
+    padding-right: 100px;
+  }
 }
 
 .header-link:link,
@@ -36,13 +40,56 @@ p {
   font-size: 40px;
   line-height: 48px;
   position: relative;
-  // && ::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   width: 10px;
-  //   height: 100%;
-  //   display: block;
-  // }
+  padding: 8px 0;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 10px;
+    height: 100%;
+    display: block;
+    background-color: $blue-dark;
+  }
+}
+
+.span-number {
+  font-size: 30px;
+  font-weight: bold;
+  color: $white;
+  padding-bottom: 10px;
+}
+.span-price {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: $white;
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 70px;
+  margin-bottom: 40px;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: " ";
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: $white;
+  }
+}
+
+.span-text {
+  font-size: 17px;
+  font-weight: bold;
+  color: $white;
+}
+
+.footer-heading {
+  font-size: 25px;
+  font-weight: 400;
+  color: $white;
+  padding-bottom: 35px;
 }

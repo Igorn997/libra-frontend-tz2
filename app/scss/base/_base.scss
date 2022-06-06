@@ -25,6 +25,13 @@ a {
   margin: 0 auto;
 }
 
+.container-hero {
+  width: 100%;
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .container-wide {
   width: 100%;
   max-width: 1510px;
@@ -34,4 +41,13 @@ a {
 
 .pd {
   padding-top: 120px;
+}
+
+.pdb {
+  padding-bottom: 120px;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
 }

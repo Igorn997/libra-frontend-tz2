@@ -1,13 +1,14 @@
 .site-header {
-  background-image: url("/app/images/hero.png");
-  background-repeat: no-repeat;
-  background-position: 100% 0%;
+  // background-image: url("/app/images/hero.png");
+  // background-repeat: no-repeat;
+  // background-position: 100% 0%;
   background-blend-mode: multiply;
   .site-header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 35px;
+    margin-bottom: -70px;
     .site-header-inner-right {
       .menu-toggle {
         .menu-toggle-bar1 {

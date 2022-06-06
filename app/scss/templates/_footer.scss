@@ -1,0 +1,50 @@
+.site-footer {
+  background-color: $blue-dark;
+  padding-bottom: 150px;
+  .site-footer-inner {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    .site-footer-inner-col {
+      flex: 0 0 25%;
+      max-width: 25%;
+      .contact-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 17px;
+          gap: 15px;
+          color: $white;
+          .contact-menu-icon {
+            width: 15px;
+          }
+        }
+      }
+      input {
+        height: 40px;
+        width: 100%;
+        border: none;
+        font-size: 17px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+      }
+      .social-footer {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding-top: 40px;
+        img {
+          max-width: 25px;
+        }
+      }
+    }
+  }
+}
