@@ -29,6 +29,10 @@
         flex: 0 0 50%;
         max-width: 50%;
       }
+      @include breakpoint("phone") {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
       .our-achievments-col-img {
         object-fit: contain;
         object-position: center;
@@ -42,6 +46,9 @@
       .span-text {
         font-size: 24px;
         @include breakpoint("tablet") {
+          padding-bottom: 35px;
+        }
+        @include breakpoint("phone") {
           padding-bottom: 35px;
         }
       }

@@ -23,6 +23,16 @@
         background-color: rgba(255, 255, 255, 0.61);
       }
     }
+    @include breakpoint("phone") {
+      flex: 0 0 100%;
+      max-width: 100%;
+      .heading {
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
+      }
+      .btn {
+        background-color: rgba(255, 255, 255, 0.61);
+      }
+    }
     p {
       padding-bottom: 55px;
     }
@@ -34,16 +44,23 @@
         font-size: 18px;
       }
     }
+    @include breakpoint("phone") {
+      p {
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
+        color: $black;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
   }
   .home-hero-bottom {
     width: 100%;
-    height: 100px;
+    height: 300px;
     background-color: $white;
     transform: translatey(50px);
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
     @include breakpoint("tablet") {
-      // display: none;
     }
 
     .home-hero-bottom-inner {
@@ -54,17 +71,18 @@
       flex: 0 0 100%;
       max-width: 100%;
       height: 100%;
-      @include breakpoint("tablet") {
-        justify-content: flex-start;
-      }
 
       .home-hero-bottom-inner-col {
         flex: 0 0 35%;
         max-width: 35%;
-
         padding-left: 25px;
         @include breakpoint("tablet") {
           padding-left: 10px;
+        }
+        @include breakpoint("phone") {
+          padding: 0 20px;
+          flex: 0 0 100%;
+          max-width: 100%;
         }
 
         input {
@@ -75,12 +93,15 @@
           border: 1px solid #000;
         }
       }
-      .home-hero-bottom-inner-col3 {
+      .home-hero-bottom-inner-col:nth-child(3) {
         display: flex;
         flex: 0 0 30%;
         max-width: 30%;
-        padding-right: 20px;
-        padding-left: 25px;
+        padding: 0 20px;
+        @include breakpoint("phone") {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
       }
     }
   }
