@@ -43,9 +43,19 @@ a {
 .pd {
   padding-top: 120px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .pd {
+    padding-top: 70px;
+  }
+}
 
 .pdb {
   padding-bottom: 120px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .pdb {
+    padding-bottom: 70px;
+  }
 }
 
 .btn-center {
@@ -177,8 +187,11 @@ p.footer {
   font-size: 18px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 18px 100px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
   background-color: #f97616;
   transition: all 0.3s;
   cursor: pointer;
@@ -222,7 +235,7 @@ p.footer {
   display: flex;
   justify-content: flex-end;
   margin-top: -50px;
-  transform: translatey(150px);
+  transform: translatey(120px);
 }
 .pattern .pattern-1 {
   background-color: #0f2480;
@@ -275,8 +288,28 @@ p.footer {
   max-width: 45%;
   flex-direction: column;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-hero .home-hero-inner {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-hero .home-hero-inner .heading {
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
+  }
+  .home-hero .home-hero-inner .btn {
+    background-color: rgba(255, 255, 255, 0.61);
+  }
+}
 .home-hero .home-hero-inner p {
   padding-bottom: 55px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-hero .home-hero-inner p {
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+  }
 }
 .home-hero .home-hero-bottom {
   width: 100%;
@@ -290,14 +323,25 @@ p.footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex: 0 0 100%;
   max-width: 100%;
   height: 100%;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-hero .home-hero-bottom .home-hero-bottom-inner {
+    justify-content: flex-start;
+  }
+}
 .home-hero .home-hero-bottom .home-hero-bottom-inner .home-hero-bottom-inner-col {
   flex: 0 0 35%;
   max-width: 35%;
-  padding-right: 25px;
+  padding-left: 25px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-hero .home-hero-bottom .home-hero-bottom-inner .home-hero-bottom-inner-col {
+    padding-left: 10px;
+  }
 }
 .home-hero .home-hero-bottom .home-hero-bottom-inner .home-hero-bottom-inner-col input {
   width: 100%;
@@ -307,27 +351,57 @@ p.footer {
   border: 1px solid #000;
 }
 .home-hero .home-hero-bottom .home-hero-bottom-inner .home-hero-bottom-inner-col3 {
-  flex: 0 0 20%;
+  display: flex;
+  flex: 0 0 30%;
   max-width: 30%;
+  padding-right: 20px;
+  padding-left: 25px;
 }
 
 .image-content .image-content-inner {
   padding-top: 40px;
   display: flex;
   flex: 0 0 100%;
+  flex-wrap: wrap;
   max-width: 100%;
   align-items: center;
-  gap: 100px;
 }
-.image-content .image-content-inner .image-content-col {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .image-content .image-content-inner {
+    gap: 30px;
+  }
+}
+.image-content .image-content-inner .image-content-col-left {
   flex: 0 0 50%;
   max-width: 50%;
+  padding-right: 50px;
 }
-.image-content .image-content-inner .image-content-col p {
-  padding-bottom: 50px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .image-content .image-content-inner .image-content-col-left {
+    padding-right: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 2;
+  }
 }
-.image-content .image-content-inner .image-content-col .image-content-col-img {
+.image-content .image-content-inner .image-content-col-left .image-content-col-img {
   width: 100%;
+}
+.image-content .image-content-inner .image-content-col-right {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .image-content .image-content-inner .image-content-col-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 1;
+    padding-left: 0;
+  }
+}
+.image-content .image-content-inner .image-content-col-right p {
+  padding-bottom: 50px;
 }
 
 .houses-posts .houses-posts-inner {
@@ -351,6 +425,12 @@ p.footer {
   max-width: 33.333333%;
   padding: 0 15px;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .houses-posts .houses-posts-inner .hp-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 .houses-posts .houses-posts-inner .hp-column .hp-box {
   height: 400px;
@@ -435,6 +515,13 @@ p.footer {
   max-width: 50%;
   padding-right: 45px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content-images .content-images-inner .content-images-col-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+}
 .content-images .content-images-inner .content-images-col-left p {
   padding-bottom: 35px;
 }
@@ -447,6 +534,12 @@ p.footer {
   gap: 15px;
   flex: 0 0 50%;
   max-width: 50%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content-images .content-images-inner .content-images-col-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 .content-images .content-images-inner .content-images-col-right .content-images-col-img1 {
   flex: 0 0 40%;
@@ -493,6 +586,12 @@ p.footer {
   flex: 0 0 25%;
   max-width: 25%;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .our-achievments .our-achievments-inner .our-achievments-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 .our-achievments .our-achievments-inner .our-achievments-col .our-achievments-col-img {
   object-fit: contain;
   object-position: center;
@@ -505,6 +604,11 @@ p.footer {
 }
 .our-achievments .our-achievments-inner .our-achievments-col .span-text {
   font-size: 24px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .our-achievments .our-achievments-inner .our-achievments-col .span-text {
+    padding-bottom: 35px;
+  }
 }
 .our-achievments .btn-center {
   padding-top: 65px;
@@ -644,6 +748,13 @@ p.footer {
 .site-footer .site-footer-inner .site-footer-inner-col {
   flex: 0 0 25%;
   max-width: 25%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .site-footer .site-footer-inner .site-footer-inner-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-bottom: 50px;
+  }
 }
 .site-footer .site-footer-inner .site-footer-inner-col .contact-menu {
   display: flex;

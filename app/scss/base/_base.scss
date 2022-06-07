@@ -41,10 +41,16 @@ a {
 
 .pd {
   padding-top: 120px;
+  @include breakpoint("tablet") {
+    padding-top: 70px;
+  }
 }
 
 .pdb {
   padding-bottom: 120px;
+  @include breakpoint("tablet") {
+    padding-bottom: 70px;
+  }
 }
 
 .btn-center {

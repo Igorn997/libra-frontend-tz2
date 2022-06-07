@@ -10,6 +10,11 @@
       flex: 0 0 50%;
       max-width: 50%;
       padding-right: 45px;
+      @include breakpoint("tablet") {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 30px;
+      }
       p {
         padding-bottom: 35px;
       }
@@ -23,6 +28,10 @@
       gap: 15px;
       flex: 0 0 50%;
       max-width: 50%;
+      @include breakpoint("tablet") {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
       .content-images-col-img1 {
         flex: 0 0 40%;
         max-width: 40%;

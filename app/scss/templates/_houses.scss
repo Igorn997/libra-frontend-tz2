@@ -19,6 +19,10 @@
       max-width: 33.333333%;
       padding: 0 15px;
       margin-bottom: 40px;
+      @include breakpoint("tablet") {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
       .hp-box {
         height: 400px;
 
