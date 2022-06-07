@@ -1,6 +1,6 @@
 .site-footer {
   background-color: $blue-dark;
-  padding-bottom: 150px;
+  padding-bottom: 20px;
   .site-footer-inner {
     display: flex;
     flex: 0 0 100%;
@@ -45,6 +45,24 @@
           max-width: 25px;
         }
       }
+    }
+  }
+  .site-footer-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    align-items: center;
+    padding-top: 25px;
+    .footer-border {
+      width: 650px;
+      height: 1px;
+      background-color: $white;
+      margin-bottom: 10px;
+    }
+    p {
+      color: $white;
     }
   }
 }
