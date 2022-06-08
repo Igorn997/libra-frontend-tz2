@@ -5,6 +5,15 @@ $(".center").slick({
   Infinity: true,
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
+  responsive: [
+    {
+      breakpoint: 500,
+      setting: {
+        arrows: false,
+        slidesToShow: 2,
+      },
+    },
+  ],
 });
 
 $(".responsive").slick({

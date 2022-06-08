@@ -5,6 +5,9 @@
   // position: absolute;
   // right: 5%;
   transform: translatey(120px);
+  @include breakpoint("phone") {
+    transform: translatey(80px);
+  }
   .pattern-1 {
     background-color: $blue-dark;
     height: 65px;

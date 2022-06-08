@@ -6,7 +6,7 @@
     max-width: 100%;
 
     flex-wrap: wrap;
-    .content-images-col-left {
+    .content-images-col:nth-child(1) {
       flex: 0 0 50%;
       max-width: 50%;
       padding-right: 45px;
@@ -27,7 +27,7 @@
         text-transform: capitalize;
       }
     }
-    .content-images-col-right {
+    .content-images-col:nth-child(2) {
       display: flex;
       align-items: center;
       gap: 15px;

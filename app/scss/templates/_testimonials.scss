@@ -17,6 +17,9 @@
       flex: 0 0 100%;
       max-width: 100%;
       border: 1px solid $blue-dark;
+      @include max-mq(500px) {
+        padding: 20px 0;
+      }
       .testimonials-inner-content-pattern {
         height: 195px;
         width: 100px;
@@ -25,7 +28,6 @@
       }
       .testimonials-img {
         height: 150px;
-        width: 120px;
         object-fit: contain;
         object-position: center;
         position: relative;
@@ -47,5 +49,13 @@
         }
       }
     }
+  }
+}
+
+.testimonials-arrows {
+  cursor: pointer;
+  @include max-mq(500px) {
+    display: none;
+    visibility: hidden;
   }
 }

@@ -11,6 +11,10 @@ p {
   color: $gray-light;
   font-size: 17px;
   line-height: 24px;
+  @include breakpoint("phone") {
+    font-size: 15px;
+    line-height: 22px;
+  }
   &.footer {
     color: $white;
     padding-right: 100px;
@@ -35,10 +39,27 @@ p {
     color: $blue-light;
     padding-bottom: 20px;
   }
+  @include breakpoint("tablet") {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  @include breakpoint("phone") {
+    font-size: 50px;
+    line-height: 70px;
+  }
 }
 
 .section-title {
   font-size: 40px;
+  @include breakpoint("tablet") {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  @include breakpoint("phone") {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
   line-height: 48px;
   position: relative;
   padding: 8px 0;

@@ -18,7 +18,7 @@
       flex: 0 0 33.333333%;
       max-width: 33.333333%;
       padding: 0 15px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       @include breakpoint("tablet") {
         flex: 0 0 50%;
         max-width: 50%;
@@ -27,11 +27,11 @@
         flex: 0 0 50%;
         max-width: 50%;
       }
+      @include max-mq(520px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
       .hp-box {
-        height: 400px;
-
-        // background-color: red;
-        // overflow: hidden;
         .hp-box-img {
           height: 300px;
           width: 100%;
@@ -40,12 +40,15 @@
         }
         .hp-box-text {
           padding: 20px 0;
-        }
-        .hp-box-heading {
-          font-size: 20px;
-          font-weight: bold;
-          text-transform: uppercase;
-          padding-bottom: 10px;
+          width: 100%;
+          overflow-wrap: break-word;
+
+          .hp-box-heading {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+          }
         }
       }
     }
