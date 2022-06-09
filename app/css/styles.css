@@ -328,7 +328,7 @@ p.footer {
   background-image: url("/app/images/hero.png");
   background-repeat: no-repeat;
   background-position: 100% 0%;
-  background-size: 924px 100%;
+  background-size: fill;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -340,6 +340,9 @@ p.footer {
   flex: 0 0 45%;
   max-width: 45%;
   flex-direction: column;
+}
+.home-hero .home-hero-inner p {
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .home-hero .home-hero-inner {
