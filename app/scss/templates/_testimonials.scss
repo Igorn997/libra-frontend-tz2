@@ -2,7 +2,7 @@
   .testimonials-inner {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
     .testimonials-heading-wrapper {
       display: flex;
@@ -13,24 +13,32 @@
     .testimonials-inner-content {
       padding: 40px 15px;
       display: flex;
+
       align-items: center;
       flex: 0 0 100%;
       max-width: 100%;
       border: 1px solid $blue-dark;
       @include max-mq(500px) {
-        padding: 20px 0;
+        padding: 0;
+        flex-direction: column;
       }
       .testimonials-inner-content-pattern {
         height: 195px;
         width: 100px;
         background-color: $blue-dark;
         transform: translateX(35px);
+        @include max-mq(500px) {
+          display: none;
+        }
       }
       .testimonials-img {
         height: 150px;
         object-fit: contain;
         object-position: center;
         position: relative;
+        @include max-mq(500px) {
+          padding-bottom: 20px;
+        }
       }
       .testimonials-inner-content-text {
         padding-left: 15px;
@@ -45,6 +53,11 @@
             margin-left: 5px;
             background-color: $blue-dark;
             position: absolute;
+          }
+        }
+        @include max-mq(420) {
+          p {
+            font-size: 14px;
           }
         }
       }
