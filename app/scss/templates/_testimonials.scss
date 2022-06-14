@@ -1,9 +1,11 @@
 .testimonials {
   .testimonials-inner {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 100%;
     max-width: 100%;
+
     .testimonials-heading-wrapper {
       display: flex;
       flex: 0 0 100%;
@@ -11,13 +13,13 @@
       justify-content: center;
     }
     .testimonials-inner-content {
-      padding: 40px 15px;
+      padding: 40px 35px;
       display: flex;
 
       align-items: center;
       flex: 0 0 100%;
       max-width: 100%;
-      border: 1px solid $blue-dark;
+      // border: 1px solid $blue-dark;
       @include max-mq(500px) {
         padding: 0;
         flex-direction: column;
@@ -36,12 +38,14 @@
         object-fit: contain;
         object-position: center;
         position: relative;
+        padding-left: 40px;
         @include max-mq(500px) {
           padding-bottom: 20px;
         }
       }
       .testimonials-inner-content-text {
         padding-left: 15px;
+        padding-right: 20px;
         h3 {
           padding-bottom: 10px;
           font-size: 20px;
@@ -67,8 +71,26 @@
 
 .testimonials-arrows {
   cursor: pointer;
+  pointer-events: all;
   @include max-mq(500px) {
     display: none;
     visibility: hidden;
   }
+}
+
+.slider-arrows {
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.slider-container {
+  border: 1px solid $blue-dark;
 }

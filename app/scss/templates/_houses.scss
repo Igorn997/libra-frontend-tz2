@@ -1,56 +1,56 @@
-.houses-posts {
-  .houses-posts-inner {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    .houses-posts-heading-wrapper {
-      display: flex;
-      flex: 0 0 100%;
-      max-width: 100%;
-      flex-direction: column;
-      align-items: center;
-      p {
-        padding-bottom: 65px;
-      }
-    }
-    .hp-column {
-      flex: 0 0 33.333333%;
-      max-width: 33.333333%;
-      padding: 0 15px;
-      margin-bottom: 20px;
-      @include breakpoint("tablet") {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-      @include breakpoint("phone") {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-      @include max-mq(520px) {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-      .hp-box {
-        .hp-box-img {
-          height: 300px;
-          width: 100%;
-          object-fit: cover;
-          object-position: center;
-        }
-        .hp-box-text {
-          padding: 20px 0;
-          width: 100%;
-          overflow-wrap: break-word;
+.houses-posts-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
 
-          .hp-box-heading {
-            font-size: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            padding-bottom: 10px;
-          }
-        }
-      }
-    }
+.houses-posts-heading-wrapper {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.houses-posts-heading-text {
+  padding-bottom: 65px;
+}
+
+.hp-column {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  @include breakpoint("tablet") {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
+  @include breakpoint("phone") {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @include max-mq(520px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.hp-box-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hp-box-text {
+  padding: 20px 0;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.hp-box-heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }

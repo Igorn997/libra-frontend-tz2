@@ -1,60 +1,62 @@
-.content-images {
-  .content-images-inner {
-    display: flex;
-    align-items: center;
+.content-images-inner {
+  display: flex;
+  align-items: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.content-images-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 45px;
+  @include breakpoint("tablet") {
     flex: 0 0 100%;
     max-width: 100%;
-
-    flex-wrap: wrap;
-    .content-images-col:nth-child(1) {
-      flex: 0 0 50%;
-      max-width: 50%;
-      padding-right: 45px;
-      @include breakpoint("tablet") {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-bottom: 30px;
-      }
-      @include breakpoint("phone") {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-bottom: 30px;
-      }
-      p {
-        padding-bottom: 35px;
-      }
-      .btn {
-        text-transform: capitalize;
-      }
+    padding-bottom: 30px;
+  }
+  @include breakpoint("phone") {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+  &:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    @include breakpoint("tablet") {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
-    .content-images-col:nth-child(2) {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      flex: 0 0 50%;
-      max-width: 50%;
-      @include breakpoint("tablet") {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-      @include breakpoint("phone") {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-      .content-images-col-img1 {
-        flex: 0 0 40%;
-        max-width: 40%;
-        object-fit: cover;
-        object-position: center;
-        height: 352px;
-      }
-      .content-images-col-img2 {
-        flex: 0 0 60%;
-        max-width: 60%;
-        height: 274px;
-        object-fit: cover;
-        object-position: center;
-      }
+    @include breakpoint("phone") {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
+}
+
+.content-images-col-img1 {
+  flex: 0 0 40%;
+  max-width: 40%;
+  object-fit: cover;
+  object-position: center;
+  height: 352px;
+}
+
+.content-images-col-img2 {
+  flex: 0 0 60%;
+  max-width: 60%;
+  height: 274px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-images-col-text {
+  padding-bottom: 35px;
+}
+
+.images-col-cta {
+  text-transform: capitalize;
 }

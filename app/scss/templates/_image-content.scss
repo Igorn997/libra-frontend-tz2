@@ -1,58 +1,57 @@
-.image-content {
-  .image-content-inner {
-    padding-top: 40px;
-    display: flex;
-    flex: 0 0 100%;
-    flex-wrap: wrap;
-    max-width: 100%;
-    align-items: center;
+.image-content-inner {
+  padding-top: 40px;
+  display: flex;
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: center;
+  @include breakpoint("tablet") {
+    gap: 30px;
+  }
+  @include breakpoint("phone") {
+    gap: 30px;
+  }
+}
 
+.image-content-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 50px;
+  @include breakpoint("tablet") {
+    padding-right: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 2;
+  }
+  @include breakpoint("phone") {
+    padding-right: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 2;
+  }
+  &:nth-child(2) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 50px;
     @include breakpoint("tablet") {
-      gap: 30px;
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+      padding-left: 0;
     }
     @include breakpoint("phone") {
-      gap: 30px;
-    }
-    .image-content-col:nth-child(1) {
-      flex: 0 0 50%;
-      max-width: 50%;
-      padding-right: 50px;
-      @include breakpoint("tablet") {
-        padding-right: 0;
-        flex: 0 0 100%;
-        max-width: 100%;
-        order: 2;
-      }
-      @include breakpoint("phone") {
-        padding-right: 0;
-        flex: 0 0 100%;
-        max-width: 100%;
-        order: 2;
-      }
-
-      .image-content-col-img {
-        width: 100%;
-      }
-    }
-    .image-content-col:nth-child(2) {
-      flex: 0 0 50%;
-      max-width: 50%;
-      padding-left: 50px;
-      @include breakpoint("tablet") {
-        flex: 0 0 100%;
-        max-width: 100%;
-        order: 1;
-        padding-left: 0;
-      }
-      @include breakpoint("phone") {
-        flex: 0 0 100%;
-        max-width: 100%;
-        order: 1;
-        padding-left: 0;
-      }
-      p {
-        padding-bottom: 50px;
-      }
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+      padding-left: 0;
     }
   }
+}
+
+.image-content-col-img {
+  width: 100%;
+}
+
+.image-content-col-text {
+  padding-bottom: 50px;
 }

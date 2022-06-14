@@ -1,68 +1,55 @@
 .our-achievments {
   background-color: $blue-dark;
   padding-top: 70px;
-  .our-achievments-inner {
-    display: flex;
+}
+
+.our-achievments-inner {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.our-achievments-heading-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 50px;
+}
+
+.our-achievments-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 25%;
+  max-width: 25%;
+  @include breakpoint("tablet") {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @include breakpoint("phone") {
     flex: 0 0 100%;
     max-width: 100%;
-    flex-wrap: wrap;
-    .our-achievments-heading-wrapper {
-      display: flex;
-      justify-content: center;
-      flex: 0 0 100%;
-      max-width: 100%;
-      padding-bottom: 50px;
-      .section-title {
-        color: $white;
-        &::before {
-          background-color: $white;
-        }
-      }
-    }
-    .our-achievments-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 0 0 25%;
-      max-width: 25%;
-      @include breakpoint("tablet") {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-      @include breakpoint("phone") {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-      .our-achievments-col-img {
-        object-fit: contain;
-        object-position: center;
-        width: 55px;
-        height: 55px;
-      }
-      .span-number {
-        font-size: 40px;
-        padding: 20px 0;
-      }
-      .span-text {
-        font-size: 24px;
-        @include breakpoint("tablet") {
-          padding-bottom: 35px;
-        }
-        @include breakpoint("phone") {
-          padding-bottom: 35px;
-        }
-      }
-    }
   }
-  .btn-center {
-    padding-top: 65px;
-    padding-bottom: 45px;
-    .btn {
-      color: $black;
-      background-color: $white;
-      text-transform: capitalize;
-      font-weight: bold;
-      padding: 13px 70px;
-    }
-  }
+}
+
+.our-achievments-col-img {
+  object-fit: contain;
+  object-position: center;
+  width: 55px;
+  height: 55px;
+}
+
+.btn-center {
+  padding-top: 65px;
+  padding-bottom: 45px;
+}
+
+.achievments-cta {
+  color: $black;
+  background-color: $white;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 13px 70px;
 }

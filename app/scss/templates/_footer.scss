@@ -1,81 +1,91 @@
 .site-footer {
   background-color: $blue-dark;
   padding-bottom: 20px;
-  .site-footer-inner {
-    display: flex;
+}
+
+.site-footer-inner {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.site-footer-inner-col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  @include breakpoint("tablet") {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-bottom: 50px;
+  }
+  @include breakpoint("phone") {
     flex: 0 0 100%;
     max-width: 100%;
-    flex-wrap: wrap;
-    .site-footer-inner-col {
-      flex: 0 0 25%;
-      max-width: 25%;
-      @include breakpoint("tablet") {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding-bottom: 50px;
-      }
-      @include breakpoint("phone") {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-bottom: 50px;
-      }
-      .contact-menu {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        justify-content: flex-start;
-        list-style: none;
-        padding: 0;
+    padding-bottom: 50px;
+  }
+}
+.footer-form {
+  padding: 0;
+  margin: 0;
+  input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+}
 
-        li {
-          display: flex;
-          align-items: center;
-          font-size: 17px;
-          gap: 15px;
-          color: $white;
-          .contact-menu-icon {
-            width: 15px;
-          }
-        }
-      }
-      input {
-        height: 40px;
-        width: 100%;
-        border: none;
-        font-size: 17px;
-        padding-left: 10px;
-        margin-bottom: 20px;
-      }
-      .social-footer {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        padding-top: 40px;
-        img {
-          max-width: 25px;
-        }
-      }
+.contact-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 15px;
+    color: $white;
+    .contact-menu-icon {
+      width: 15px;
     }
   }
-  .site-footer-bottom {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 100%;
-    max-width: 100%;
+}
 
-    align-items: center;
-    padding-top: 25px;
-    .footer-border {
-      width: 650px;
-      height: 1px;
-      background-color: $white;
-      margin-bottom: 10px;
-      @include breakpoint("phone") {
-        width: 100%;
-      }
-    }
-    p {
-      color: $white;
-    }
+.social-footer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+  img {
+    max-width: 25px;
+  }
+}
+
+.site-footer-bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  max-width: 100%;
+
+  align-items: center;
+  padding-top: 25px;
+  p {
+    color: $white;
+  }
+}
+
+.footer-border {
+  width: 650px;
+  height: 1px;
+  background-color: $white;
+  margin-bottom: 10px;
+  @include breakpoint("phone") {
+    width: 100%;
   }
 }
