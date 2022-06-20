@@ -62,9 +62,10 @@
   align-items: center;
   gap: 30px;
   padding-top: 40px;
-  img {
-    max-width: 25px;
-  }
+}
+
+.social-footer-icon {
+  max-width: 25px;
 }
 
 .site-footer-bottom {
@@ -75,9 +76,10 @@
 
   align-items: center;
   padding-top: 25px;
-  p {
-    color: $white;
-  }
+}
+
+.site-footer-bottom-text {
+  color: $white;
 }
 
 .footer-border {
